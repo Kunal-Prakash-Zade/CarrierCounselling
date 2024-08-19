@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './components/Home';
+import Home from './components/index';
 import Footer from './components/Footer';
 import JoinAsMentor from './components/JoinAsMentor';
 import FindMentor from './components/FindMentor';
@@ -23,7 +23,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route  path='/' element = {<Home />}/>
+          <Route  path='/' element = {<index />}/>
           <Route path='/mentor' element = {<JoinAsMentor />} />
           <Route path='/find' element = {<FindMentor />} />
           <Route path='/done' element = {<Payment />} />
